@@ -17,7 +17,7 @@ jobs:
           # Make sure to enable "only build pull requests" https://circleci.com/docs/oss#only-build-pull-requests
           # This will run CI only for pull requests and commits to the default branch
           # https://discuss.circleci.com/t/is-it-possible-to-run-workflows-when-github-prs-are-opened/38106
-          # Add environment variables in the CircleCI interface (SNOWFLAKE_ACCOUNT, SNOWFLAKE_USER, DATAFOLD_API_KEY)
+          # Add environment variables in the CircleCI interface (Ex: SNOWFLAKE_ACCOUNT, SNOWFLAKE_USER, DATAFOLD_API_KEY)
           name: "Run dbt and datafold"
           command: |
             if [ -z "${CIRCLE_PULL_REQUEST##*/}" ]
